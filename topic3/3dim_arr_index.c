@@ -1,0 +1,26 @@
+/*
+    2024-03-18, 임규연 (lky473736)
+    과제 3. 3차원 배열을 index로 접근
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    // 3 nested loopstation 시 3차원 배열에 index로 접근하기 위해 i, j, k 선언 
+    // i : 면번호 / j : 행번호 / k : 열번호
+    int arr[2][2][2] = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};
+    int i, j, k;
+    
+    // index로 접근
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            for (k = 0; k < 2; k++) {
+                printf ("arr[%d][%d][%d] == %d / %p\n", i, j, k, arr[i][j][k], &arr[i][j][k]);
+                // 4바이트씩 차이
+            }
+        }
+    }
+    
+    return 0;
+}
