@@ -27,3 +27,22 @@ int main() {
 
     return 0;
 }
+
+/*
+    for, while 문으로 구현한다 
+
+    p = arr;
+
+    for (int i = 4; i > 0; i++) {
+        printf ("%d %p\n", *(p+i), p+i);
+    }
+
+    ----------------------
+
+    int i = 4;
+    p = arr;
+
+    while (i > 0) {
+        printf ("%d %p\n", *(p+i), p+i--);
+    }
+*/
