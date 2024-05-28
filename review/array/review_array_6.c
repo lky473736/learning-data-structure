@@ -28,8 +28,14 @@ int main() {
     
     gets(c);
     // *(c + strlen(c) + 1) = '\0';
-    
     puts(c);
     
     return 0;
 }
+
+/*
+    putchar : 문자 하나 입력, 개행 X
+    getchar : 글자를 입력
+    puts : 안에 문자열의 주소값을 넣음
+    gets : 문자열을 입력받음 (버퍼처리 해주기)
+*/

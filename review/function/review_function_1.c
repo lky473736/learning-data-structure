@@ -22,3 +22,17 @@ int factorial (int a) {
         return a * factorial(a-1);
     }
 }
+
+/*
+    만약 recursive call이 아닌 loopstation으로만 구현한다면 다음과 같이 구현할 수 있다. 
+
+    int factorial (int a) {
+        int rst = 1;
+
+        while (a > 0) {
+            rst *= a--;
+        }
+
+        return rst;
+    }
+*/
